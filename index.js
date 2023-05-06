@@ -1,8 +1,8 @@
 // Segunda versao
 
-
 let Contato  = require("./Contato.js")
 let Agenda   = require("./Agenda.js")
+
 
 let agenda   = new Agenda()
 
