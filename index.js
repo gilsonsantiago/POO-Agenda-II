@@ -6,6 +6,8 @@ let Agenda   = require("./Agenda.js")
 
 let agenda   = new Agenda()
 
+preencheTeste()
+
 let executando = true
 
 while(executando){
@@ -94,4 +96,28 @@ function excluir(){
 
   agenda.excluir()
   
+}
+
+
+/** ********************************************** */
+function preencheTeste(){
+
+    contato1 = new Contato()
+    contato1.setContato("Gilson", "(83) 99999 9999")
+    
+    contato2 = new Contato()
+    contato2.setContato("Antonio Dias", "(83) 88888 8888")
+
+    contato3 = new Contato()
+    contato3.setContato("Elizabete", "(83) 11111 1111")
+
+    contato4 = new Contato()
+    contato4.setContato("Thiago Vitor", "(83) 11111 1111")
+    
+    
+    agenda.gravarDados(contato1)
+    agenda.gravarDados(contato2)
+    agenda.gravarDados(contato3)
+    agenda.gravarDados(contato4)
+      
 }

@@ -1,3 +1,4 @@
+
 class Agenda{
    
    constructor(){
@@ -77,6 +78,10 @@ class Agenda{
         
             console.log(i, '\t' + this.agenda[i].nome + 
                            '\t' + this.agenda[i].telefone)
+
+          //   console.log(i, '\t' + this.agenda[i].nome + 
+          //                 '\t' + this.agenda[i].telefone)
+        
         
        }
      
@@ -90,7 +95,7 @@ class Agenda{
       
      this.listagem()
     
-      opcao = Number(prompt("Tecle a opcao para excluir..."))
+     let opcao = Number(prompt("Tecle a opcao para excluir..."))
   
       for(let i=0; i < this.agenda.length; i++){
         
